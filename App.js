@@ -1,16 +1,17 @@
-import React from 'react';
-import { Router, browserHistory } from 'react-router';
+import React, { Component } from 'react';
+import { Router, Route, browserHistory } from 'react-router';
 import HomePage from './components/homePage.react';
 import AboutPage from './components/aboutPage.react';
 
 class App extends React.Component {
-    render() {
+    render(){
+        console.log("caca");
         return (
             <Router history={ browserHistory }>
-                <Route path="/" components={ HomePage }></Route>
-                <Route path="/about" components={ AboutPage }></Route>
+                <Route path="/" component={HomePage}></Route>
+                <Route path="/about" component={AboutPage}/>
             </Router>
-        )
+        );
     }
 }
 
