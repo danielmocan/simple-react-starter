@@ -1,7 +1,7 @@
 {
   "name": "react-redux-starter",
   "version": "1.0.0",
-  "description": "Simple react redux starter",
+  "description": "Simple React Starter",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server",
