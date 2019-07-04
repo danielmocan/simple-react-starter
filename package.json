@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "",
   "license": "ISC",
@@ -15,7 +17,8 @@
     "react-dom": "^15.3.2",
     "react-router": "^2.8.1",
     "redux": "^3.6.0",
-    "webpack": "^1.13.2"
+    "webpack": "^1.13.2",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "babel-core": "^6.17.0",
@@ -27,5 +30,6 @@
     "sass-loader": "^4.0.2",
     "style-loader": "^0.13.1",
     "webpack-dev-server": "^1.16.1"
-  }
+  },
+  "snyk": true
 }
